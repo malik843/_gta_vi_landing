@@ -23,7 +23,7 @@ const Jason = () => {
                 start: 'top',
                 end: '80% center',
                 scrub: 2
-            }, y: -300, duration: 4, ease: 'power1.inOut'
+            }, y: -300, duration: 2, ease: 'power1.inOut'
         }, '<')
     })
 

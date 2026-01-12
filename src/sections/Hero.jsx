@@ -30,15 +30,14 @@ const Hero = () => {
                 scrub: 2.5,
                 end: '+=200%',
                 pin: true,
-                // markers: true, // enable to debug ScrollTrigger
             }
         })
 
         tl
         .to('.fade-out', { opacity: 0, ease: 'power1.inOut'})
         .to('.scale-out', { scale: 1, ease: 'power1.inOut'})
-        .to('.mask-wrapper', { maskSize: maskSize, ease: 'power1.inOut'}, '<')
-        .to('.mask-wrapper', { opacity: 0,})
+        .to('.mask-wrapper', { maskSize, ease: 'power1.inOut'}, '<')
+        .to('.mask-wrapper', { opacity: 0})
         .to('.overlay-logo', { opacity: 1, onComplete: () => {
             gsap.to('.overlay-logo', { opacity: 0})
         }}, '<')
